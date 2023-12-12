@@ -109,6 +109,10 @@
         background-color: rgb(216, 129, 129);
     }
 
+    #about-section > p {
+        margin-bottom: 32px;
+    }
+
     #work-section {
         background-color: rgb(33, 155, 155);
     }
