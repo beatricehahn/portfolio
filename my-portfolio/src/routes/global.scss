@@ -7,13 +7,9 @@
 }
 
 :root {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    
     --black-800: #242424;
     --off-white: #F1F1F1;
+
     font-family: sans-serif;
 }
 
@@ -25,8 +21,10 @@ body {
 section {
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 16vw;
+    padding-right: 16vw;
+
+    width: 100vw;
 }
 
 ul {

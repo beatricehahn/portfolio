@@ -1,3 +1,7 @@
+<script>
+    import './global.scss';
+</script>
+
 <section id='hero-section'>
     <h1>This is the homepage</h1>
     <p id='hero-summary'>This is the hero section text. Lorem Ipsum.
@@ -82,21 +86,34 @@
     <div class="linkedin"></div>
 </section>
 
-<style>
+<style lang="scss">
     * {
-        width: 100%vw;
+        width: 100vw;
         margin: 0;
     }
+
     h1, h2, h3, h4, h5, h6 {
         font-family: 'BebasNeue-Regular', sans-serif;
     }
+
+    ul {
+        padding: 0
+    }
+
+    li {
+        list-style-type: none;
+    }
+
     #hero-section {
         height: 90vh;
         background-color: rgb(203, 203, 103);
-    }
 
-    #hero-summary {
-        width: 50vw;
+        h1 {
+            font-size: 50px;
+        }
+        #hero-summary {
+            width: 50vw;
+        }
     }
 
     #quote-section {
@@ -107,10 +124,10 @@
 
     #about-section {
         background-color: rgb(216, 129, 129);
-    }
 
-    #about-section > p {
-        margin-bottom: 32px;
+        p {
+            margin-bottom: 32px;
+        }
     }
 
     #work-section {
@@ -121,12 +138,13 @@
         display: flex;
         padding-top: 64px;
         padding-bottom: 32px;
-    }
-
-    .project-info > p {
-        margin-top: 24px;
-        margin-bottom: 24px;
-        padding-right: 128px;
+        .project-info {
+            p {
+                margin-top: 24px;
+                margin-bottom: 24px;
+                padding-right: 128px;
+            }
+        }
     }
 
     .project-img-placeholder{
@@ -144,12 +162,4 @@
         color: var(--off-white);
         height: 10vh;
     }
-
-    ul {
-        padding: 0
-    }
-    li {
-        list-style-type: none;
-    }
-
 </style>

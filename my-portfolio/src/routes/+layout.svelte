@@ -1,5 +1,12 @@
 <script>
-    import './global.css';
+    import './global.scss';
+    import MenuIcon from '../public/bh-v2.svg'
+
+    let showMenu = false;
+
+    function toggleMenu() {
+        showMenu = !showMenu;
+    }
 </script>
 
 <nav>
@@ -7,14 +14,20 @@
         <div class="logo"></div>
         <span>BEATRICE HAHN</span>
     </div>
-    <div>
-        <ul class='nav-links'>
-            <li><a href='#about-section' class='nav-link'>ABOUT</a></li>
-            <li><a href='#work-section' class='nav-link'>WORK</a></li>
-            <li><a href='#about-section' class='nav-link'>RESUME</a></li>
-            <li><a href='#contact-section' class='nav-link'>CONTACT</a></li>
-        </ul>
-    </div>
+
+    <!-- Menu icon viewable for smaller screens -->
+    <button tabindex='0' class='menu-icon' on:click={toggleMenu} aria-label='clickable menu button'>
+        <img src="{MenuIcon}" alt="Menu Icon">
+    </button>
+
+    <!-- Full sized nav links -->
+    <ul class='nav-links {showMenu ? 'show-menu' : "" }'>
+        <li><a href='#about-section' class='nav-link'>ABOUT</a></li>
+        <li><a href='#work-section' class='nav-link'>WORK</a></li>
+        <li><a href='#about-section' class='nav-link'>RESUME</a></li>
+        <li><a href='#contact-section' class='nav-link'>CONTACT</a></li>
+    </ul>
+    
 </nav>
 
 <main>
@@ -44,7 +57,12 @@
     <span>Beatrice Hahn 2024</span>
 </footer>
 
-<style>
+<style lang="scss">
+    li {
+        list-style-type: none;
+    }
+    
+    /* NAV SPECIFIC*/
     nav {
         align-items: center;
         background-color: rgba(255, 255, 255, 0.8);
@@ -54,45 +72,69 @@
         position: sticky;
         top: 0;
         z-index: 100;
-    }
+        
+        .nav-links {
+            display: flex;
+            
+            a{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
 
-    .nav-links {
-        display: flex;
-    }
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            .logo {
+                background-color: var(--black-800);
+                height: 20px;
+                margin-right: 20px;
+                width: 20px;
+            }
+        }
 
-    .nav-links > li > a {
-        margin-left: 20px;
-        margin-right: 20px;
+        .menu-icon {
+            border: none;
+            img {
+                width: 20px;
+                height: auto;
+            }
+        }
     }
-    .logo-wrapper {
-        display: flex;
-        align-items: center;
-
-    }
-    .logo {
-        background-color: var(--black-800);
-        height: 20px;
-        margin-right: 20px;
-        width: 20px;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
+    
+    
     nav, footer {
-        padding-top: 5vh;
-        padding-left: 96px;
-        padding-right: 96px;
+        padding-top: 20px;
+        padding-left: 16vw;
+        padding-right: 16vw;
     }
 
+    /* FOOTER SPECIFIC*/
     footer {
         display: flex;
         justify-content: space-between;
         padding-bottom: 16px;
+
+        span {
+            font-size: 10px;
+        }
     }
 
-    footer > span {
-        font-size: 10px;
+    /* Media query for smaller screens*/
+    @media screen and (max-width: 400px) {
+        .menu-icon {
+            display: block;
+        }
+
+        .nav-links {
+            .nav-link {
+                display: none;
+                color: red;
+            }
+        }
+
+        .show-menu .nav-links {
+            display: block;
+        }
     }
 </style>
