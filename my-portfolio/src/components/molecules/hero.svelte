@@ -14,9 +14,9 @@
     #hero-container {
         background-color: rgb(29, 146, 184);
         border-radius: 10px;
-        width: calc(100vw - 2 * $header-and-footer-margin);
-        height: calc(100vh - 2 * $header-and-footer-margin);
-        margin: $header-and-footer-margin;
+        width: calc(100vw - 4 * $header-and-footer-margin);
+        height: calc(100vh - 4 * $header-and-footer-margin);
+        margin-top: 2*$header-and-footer-margin;
         display: flex;
         align-items: flex-end;
 
@@ -25,10 +25,8 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                background-color: rgb(204, 41, 41);
             }
             
-            background-color: rgb(244, 190, 190);
             padding-left: 2 * $container-padding;
             padding-right: 2 * $container-padding;
             padding-bottom: 3 * $container-padding;

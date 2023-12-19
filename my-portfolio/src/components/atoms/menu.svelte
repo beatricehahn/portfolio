@@ -44,7 +44,6 @@
         overflow: hidden;
 
         .dropdown-content {
-
             position: absolute;
             background-color: $off-white;
             z-index: 2;

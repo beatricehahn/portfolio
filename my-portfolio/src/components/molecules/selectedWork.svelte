@@ -14,6 +14,11 @@
 
 <style lang='scss'>
     #selected-works-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 64px;
         background-color: rgb(172, 241, 61);
         width: 100%;
         padding-bottom: 64px;
