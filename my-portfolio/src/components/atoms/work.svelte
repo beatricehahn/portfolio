@@ -16,10 +16,10 @@
     .work-container {
         background-color: grey;
         border-radius: 10px;
-        width: calc(100vw - 2 * $container-padding);
-        height: calc((100vw - 2 * $container-padding)/1.6) ;
-        margin-top: 0.5 * $container-padding;
-        margin-bottom: 0.5 * $container-padding;
+        width: calc(80vw - 2 * $container-padding);
+        height: calc((80vw - 2 * $container-padding)/2);
+        margin-top: 2 * $container-padding;
+        margin-bottom: 2 * $container-padding;
         display: flex;
         align-items: flex-end;
 
