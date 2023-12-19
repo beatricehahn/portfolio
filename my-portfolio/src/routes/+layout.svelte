@@ -1,63 +1,36 @@
 <script>
-    import './global.scss';
-    import MenuIcon from '../public/bh-v2.svg'
-
-    let showMenu = false;
-
-    function toggleMenu() {
-        showMenu = !showMenu;
-    }
+    import Header from '../components/organisms/header.svelte';
+    import Footer from '../components/organisms/footer.svelte';
 </script>
 
-<nav>
-    <div class="logo-wrapper">
-        <div class="logo"></div>
-        <span>BEATRICE HAHN</span>
-    </div>
-
-    <!-- Menu icon viewable for smaller screens -->
-    <button tabindex='0' class='menu-icon' on:click={toggleMenu} aria-label='clickable menu button'>
-        <img src="{MenuIcon}" alt="Menu Icon">
-    </button>
-
-    <!-- Full sized nav links -->
-    <ul class='nav-links {showMenu ? 'show-menu' : "" }'>
-        <li><a href='#about-section' class='nav-link'>ABOUT</a></li>
-        <li><a href='#work-section' class='nav-link'>WORK</a></li>
-        <li><a href='#about-section' class='nav-link'>RESUME</a></li>
-        <li><a href='#contact-section' class='nav-link'>CONTACT</a></li>
-    </ul>
-    
-</nav>
-
+<Header />
 <main>
     <slot></slot>
 </main>
+<Footer />
 
-<footer>
-    <div id='footer-nav'>
-        <ul>
-            <span>MENU</span>
-            <div class='category-divider'></div>
-            <li><a href="#about-section">ABOUT</a></li>
-            <li><a href="#work-section">WORK</a></li>
-            <li><a href="#about-section">RESUME</a></li>
-            <li><a href="#contact-section">CONTACT</a></li>
-        </ul>
-    </div>
-    <div id='footer-contacts'>
-        <ul>
-            <span>UPDATES</span>
-            <div class='category-divider'></div>
-            <li><a href="linkedin.com/in/beatrice-hahn">LinkedIn</a></li>
-            <li><a href='github'>Github</a></li>
-            <li><a href='itch.io'>Itch.io</a></li>
-        </ul>
-    </div>
-    <span>Beatrice Hahn 2024</span>
-</footer>
+<style lang='scss'>
+    @import '../styles/globalVar.scss';
 
-<style lang="scss">
+    :global(*) {
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+    :global(main) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: $container-padding;
+        padding-right: $container-padding;
+    }
+
+</style>
+
+
+
+<!-- <style lang="scss">
+    @import './global.scss';
     li {
         list-style-type: none;
     }
@@ -137,4 +110,4 @@
             display: block;
         }
     }
-</style>
+</style> -->
