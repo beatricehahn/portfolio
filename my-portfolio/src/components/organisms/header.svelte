@@ -16,6 +16,5 @@
         display: flex;
         justify-content: center;
         width: 100vw;
-        padding-top: .8 * $container-padding;
     }
 </style>
