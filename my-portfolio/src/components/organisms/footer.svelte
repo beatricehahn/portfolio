@@ -44,6 +44,7 @@
 
             li > a {
                 color: $off-white;
+                text-decoration: none;
             }
         }
 

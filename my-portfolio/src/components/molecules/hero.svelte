@@ -10,6 +10,7 @@
 
 <style lang='scss'>
     @import '../../styles/globalVar.scss';
+    @import '../../styles/fonts.css';
 
     #hero-container {
         background-color: rgb(29, 146, 184);
@@ -44,6 +45,7 @@
                     color: $royal-purple-highlight;
                     font-size: clamp(32px, 7vw + 1rem, 80px);
                     white-space: nowrap;
+                    font-family: 'BebasNeue-Regular';
                 }
             }
 
