@@ -16,7 +16,9 @@
         margin: 0;
         border: 0;
         padding: 0;
+        font-family: sans-serif;
     }
+
     :global(main) {
         display: flex;
         flex-direction: column;

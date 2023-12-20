@@ -1,5 +1,4 @@
 <script>
-    import './global.scss';
     import HeroSection from '../components/molecules/hero.svelte';
     import SelectedWork from '../components/molecules/selectedWork.svelte';
 </script>
