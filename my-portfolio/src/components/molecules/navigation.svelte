@@ -14,7 +14,7 @@
         margin: 1.6 * $container-padding;
         display: flex;
         justify-content: space-between;
-        width: calc(100vw - 2 * $container-padding);
+        width: calc(100vw - 4 * $container-padding);
         height: 100px;
 
         img {

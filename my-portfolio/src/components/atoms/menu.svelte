@@ -15,19 +15,21 @@
 
 <div id='menu' on:focusout={handleFocusLoss}>
     <div class='dropdown'>
+        
         <button on:click={handleMenuToggle}>
         {#if isMenuOpen}
-            <p>Menu is open!</p>
+            <p>CLOSE</p>
     
         {:else}
-            <p>Menu is closed!</p>
+            <p>MENU</p>
         {/if}
         </button>
+
         <ul class='dropdown-content' style:visibility={isMenuOpen ? 'visible' : 'hidden'}>
-            <li><button>WORK</button></li>
-            <li><button>ABOUT</button></li>
-            <li><button>SERVICES AND WORKFLOW</button></li>
-            <li><button>CONTACT</button></li>
+            <li><a href="/work">WORK</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/workflow">SERVICES AND WORKFLOW</a></li>
+            <li><a href="/contact">CONTACT</a></li>
         </ul>
     </div>
 </div>
@@ -43,9 +45,17 @@
         float: left;
         overflow: hidden;
 
+        button {
+            background-color: $ui-btn-grey;
+            border-radius: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            font-weight: bold;
+        }
+
         .dropdown-content {
             position: absolute;
-            background-color: $off-white;
+            background-color: orange;
             z-index: 2;
         }
     }
