@@ -25,8 +25,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: $container-padding;
-        padding-right: $container-padding;
+        /* padding-left: $container-padding;
+        padding-right: $container-padding; */
+        margin-top: $header-and-footer-margin;
+        margin-right: $header-and-footer-margin;
+        margin-left: $header-and-footer-margin;
     }
 
 </style>
