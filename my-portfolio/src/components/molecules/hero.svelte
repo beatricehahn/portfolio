@@ -13,11 +13,11 @@
     @import '../../styles/fonts.css';
 
     #hero-container {
-        background-color: rgb(138, 138, 106);
+        background-color: rgb(29, 146, 184);
         border-radius: 10px;
         width: calc(100vw - 4 * $header-and-footer-margin);
-        height: calc(100vh - 2 * $header-and-footer-margin);
-        /* margin-top: 2*$header-and-footer-margin; */
+        height: calc(100vh - 4 * $header-and-footer-margin);
+        margin-top: 2*$header-and-footer-margin;
         display: flex;
         align-items: flex-end;
 
@@ -38,11 +38,11 @@
             width: 100%;
 
             #hero-header {
-                /* background-color: blue; */
+                background-color: blue;
                 max-width: 50rem;
 
                 h1 {
-                    color: $black-900;
+                    color: $royal-purple-highlight;
                     font-size: clamp(32px, 7vw + 1rem, 80px);
                     white-space: nowrap;
                     font-family: 'BebasNeue-Regular';
