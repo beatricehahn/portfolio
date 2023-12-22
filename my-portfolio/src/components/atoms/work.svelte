@@ -6,15 +6,17 @@
 
 <div class='work-container'>
     <div class="project-info">
-        <h5>Name of Project</h5>
-        <h5>[Industry]</h5>
+        <h6>NAME OF PROJECT</h6>
+        <h6>[INDUSTRY]</h6>
     </div>
 </div>
 
 <style lang='scss'>
     @import '../../styles/globalVar.scss';
+    @import '../../styles/fonts.css';
+
     .work-container {
-        background-color: grey;
+        background-color: rgb(61, 61, 61);
         border-radius: 10px;
         width: calc(80vw - 2 * $container-padding);
         height: calc((80vw - 2 * $container-padding)/2);
@@ -24,8 +26,13 @@
         align-items: flex-end;
 
         .project-info {
-            color: white;
-            background-color: black;
+            color:$off-white;
+            h6 {
+                font-family: 'Source Sans 3', 'Roboto';
+                font-size: clamp(16px, 7vw + 1rem, 24px);
+                font-weight: 400;
+            }
+
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
