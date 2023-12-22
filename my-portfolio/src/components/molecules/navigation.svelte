@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-    <img src="/bh-v2.svg" alt="homepage logo">
+    <a href="/"><img src="/logov3.svg" alt="homepage logo"></a>
     <DropdownMenu />
 </nav>
 
@@ -11,14 +11,14 @@
     @import '../../styles/globalVar.scss';
 
     nav {
-        margin: 1.6 * $container-padding;
+        margin: 2 * $container-padding;
         display: flex;
         justify-content: space-between;
         width: calc(100vw - 4 * $container-padding);
         height: 100px;
 
         img {
-            height: 48px;
+            height: 32px;
         }
     }
 

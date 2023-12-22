@@ -1,13 +1,11 @@
 <script>
     import HeroSection from '../components/molecules/hero.svelte';
+    import Blockquote from '../components/atoms/quote.svelte';
     import SelectedWork from '../components/molecules/selectedWork.svelte';
 </script>
 
 <HeroSection />
-<!-- 
-<section id='quote-section'>
-    <quote>[Add my quote here later]</quote>
-</section> -->
+<Blockquote />
 
 <!-- <section id='about-section'>
     <h2>ABOUT</h2>
