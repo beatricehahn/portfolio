@@ -36,17 +36,17 @@
 
             h6 {
                 font-family: 'Source Sans 3', 'Roboto';
-                font-size: clamp(1rem, 2.5vw, 2rem); 
+                font-size: clamp(1.2rem, 2.5vw, 2rem); 
                 font-weight: 400;
             }
 
             p {
                 //font-size: clamp(16px, 7vw + 1rem, 18px);
-                padding-top: 4px;
-                font-size: clamp(.8rem, 2vw, 1.5rem); 
+                padding-top: 2px;
+                font-size: clamp(rem, 2vw, 1.5rem); 
             }
 
-            margin-bottom: 16px;
+            margin-bottom: 8px;
             margin-left: 16px;
             width: 100%;
         }
