@@ -22,8 +22,8 @@
         background-color: rgb(61, 61, 61);
         border-radius: 6px;
 
-        width: calc(90vw - 2 * $container-padding);
-        height: calc((100vw - 2 * $container-padding)/2);
+        width: calc(100vw - 2 * $main-padding);
+        height: calc((100vw - 2 * $main-padding)/2);
 
         margin-top: $container-padding;
         margin-bottom: $container-padding;
