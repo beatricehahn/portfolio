@@ -18,7 +18,7 @@
         border-radius: 6px;
 
         width: calc(100dvw - 2 * $main-padding);
-        height: calc(100dvh - 2 * $main-padding);
+        height: calc(100svh - 2 * $main-padding);
         /* margin-left: $main-padding;
         margin-right: $main-padding; */
         margin-bottom: $main-padding;
