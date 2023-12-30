@@ -29,7 +29,7 @@
 
     footer {
         background-color: $black-800;
-        padding: $container-padding;
+        padding: $main-padding;
         color: $off-white;
 
         #email-address {

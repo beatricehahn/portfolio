@@ -25,7 +25,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: $header-and-footer-margin;
+        padding-top: $main-padding;
+        padding-left: $main-padding;
+        padding-right: $main-padding;
     }
 
 </style>

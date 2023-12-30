@@ -13,13 +13,15 @@
     @import '../../styles/fonts.css';
 
     #hero-container {
-        background-color: rgb(29, 146, 184);
+        background-color: rgb(28, 64, 76);
 
         border-radius: 6px;
 
-        width: calc(100dvw - 2 * $header-and-footer-margin);
-        height: calc(100dvh - 2 * $header-and-footer-margin);
-        margin-bottom: $header-and-footer-margin;
+        width: calc(100dvw - 2 * $main-padding);
+        height: calc(100dvh - 2 * $main-padding);
+        /* margin-left: $main-padding;
+        margin-right: $main-padding; */
+        margin-bottom: $main-padding;
 
         display: flex;
         align-items: flex-end;
@@ -41,7 +43,7 @@
             width: 100%;
 
             #hero-header {
-                background-color: blue;
+                //background-color: blue;
                 max-width: 50rem;
 
                 h1 {
@@ -59,7 +61,5 @@
                 color: $off-white;
             }
         }
-
-
     }
 </style>
