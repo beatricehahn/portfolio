@@ -41,9 +41,8 @@
             }
 
             p {
-                //font-size: clamp(16px, 7vw + 1rem, 18px);
-                padding-top: 2px;
                 font-size: clamp(rem, 2vw, 1.5rem); 
+                color: $ui-text-grey;
             }
 
             margin-bottom: 8px;
