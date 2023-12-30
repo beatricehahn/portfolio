@@ -7,12 +7,36 @@
         <h1>Selected Work</h1>
     </div>
     <ul>
-        <li><a href="/work/one"><Work /></a></li>
-        <li><a href="/work/two"><Work /></a></li>
-        <li><a href="/work/three"><Work /></a></li>
+        <li>
+            <a href="/work/one">
+                <Work 
+                    title='Confistand'
+                    role='UI/UX'
+                    industry='Health Monitoring Web App'
+                />
+            </a>
+        </li>
+        <li>
+            <a href="/work/two">
+                <Work 
+                    title='Podcast Blog'
+                    role='UI/UX'
+                    industry='Entertainment, Education'
+                />
+            </a>
+        </li>
+        <li>
+            <a href="/work/three">
+                <Work 
+                    title='Trojan Dining'
+                    role='Frontend Development'
+                    industry='Food'
+                />
+            </a>
+        </li>
     </ul>
     <div class='checkout'>
-        <a href="/work">Check out all work</a>
+        <a href="/work">VIEW ALL PROJECTS</a>
     </div>
 </section>
 
@@ -37,14 +61,15 @@
             padding-top: 16px;
         }
     }
+
     .title {
         text-align: right;
-        //width: 100vw;
+
     }
 
     h1 {
         /* color: $black-900; */
-        font-size: clamp(24px, 7vw + 1rem, 88px);
+        font-size: clamp(24px, 7vw + 1rem, 72px);
         white-space: nowrap;
         font-family: 'BebasNeue-Regular';
         //padding-right: 16px;
@@ -52,10 +77,11 @@
 
     ul {
         list-style: none;
+    }
 
-        a {
-            text-decoration: none;
-        }
+    a {
+        text-decoration: none;
+        color: $off-white;
     }
 
 </style>
