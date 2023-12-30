@@ -23,8 +23,6 @@
     #selected-works-container {
         padding-top: $page-header-and-footer-margin;
         padding-bottom: $page-header-and-footer-margin;
-        /* padding-left: 16px;
-        padding-right: 16px; */
         margin-top: 64px;
         width: 100vw;
 

@@ -21,7 +21,10 @@
         font-family: 'Source Sans 3', 'Roboto', sans-serif;
     }
 
+
     :global(main) {
+        max-width: 100%;
+        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
