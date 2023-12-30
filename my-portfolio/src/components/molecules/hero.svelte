@@ -14,10 +14,13 @@
 
     #hero-container {
         background-color: rgb(29, 146, 184);
-        border-radius: 10px;
-        width: calc(100vw - 4 * $header-and-footer-margin);
-        height: calc(100vh - 4 * $header-and-footer-margin);
-        margin-top: 2*$header-and-footer-margin;
+
+        border-radius: 6px;
+
+        width: calc(100dvw - 2 * $header-and-footer-margin);
+        height: calc(100dvh - 2 * $header-and-footer-margin);
+        margin-bottom: $header-and-footer-margin;
+
         display: flex;
         align-items: flex-end;
 

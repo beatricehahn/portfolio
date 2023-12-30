@@ -14,7 +14,7 @@
         top: 0;
         z-index: 100;
         display: flex;
-        justify-content: center;
+        //justify-content: center;
         width: 100vw;
     }
 </style>

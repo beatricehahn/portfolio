@@ -3,7 +3,7 @@
     import Footer from '../components/organisms/footer.svelte';
 </script>
 
-<Header />
+<!-- <Header /> -->
 <main>
     <slot></slot>
 </main>
@@ -25,11 +25,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* padding-left: $container-padding;
-        padding-right: $container-padding; */
-        margin-top: $header-and-footer-margin;
-        margin-right: $header-and-footer-margin;
-        margin-left: $header-and-footer-margin;
+        padding: $header-and-footer-margin;
     }
 
 </style>
