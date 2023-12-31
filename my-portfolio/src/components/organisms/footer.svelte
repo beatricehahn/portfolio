@@ -36,22 +36,24 @@
         </ul>
     </div>
 
-
-    <span class='copyright-and-other'>2023-2024 &copy; <b>Beatrice Hahn</b></span>
-    <br/>
-    <span class='copyright-and-other'>Dev & UI/UX Design &#x2022 Game Design</span>
+    <div class='copyright-and-other-wrapper'>
+        <span class='copyright-and-other'>2023-2024 &copy; Beatrice Hahn</span>
+        <span class='copyright-and-other'>Dev & UI/UX Design &#x2022 Game Design</span>
+    </div>
 </footer>
 
 <style lang="scss" scoped>
     @import '../../styles/globalVar.scss';
 
     footer {
-        background-color: $black-800;
+        background-color: $black-900;
         padding: $main-padding;
         color: $off-white;
 
         h6 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            font-weight: 400;
         }
 
         .footer-content-wrapper {
@@ -80,6 +82,7 @@
             #email-address {
                 padding-left: 16px;
                 display: inline;
+                color: $ui-text-grey;
             }
         }
 
@@ -94,7 +97,7 @@
             }
 
             li > a {
-                color: $off-white;
+                color: $ui-text-grey;
                 text-decoration: none;
             }
         }
@@ -113,7 +116,7 @@
                 
                 a {
                     text-decoration: none;
-                    color: $off-white;
+                    color: $ui-text-grey;
                     margin-bottom: 4px;
                 }
 
@@ -123,9 +126,24 @@
             }
         }
 
-        .copyright-and-other {
+        .copyright-and-other-wrapper {
             color: $ui-text-grey;
             font-size: 12px;
+
+            @media screen and (min-width: 601px) {
+                /* display: flex;
+                align-items: center; */
+
+                .copyright-and-other {
+                    padding-right: 8px;
+                }
+
+            }
+
+            @media screen and (max-width: 600px) {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 </style>
