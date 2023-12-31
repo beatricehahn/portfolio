@@ -13,12 +13,13 @@
 
     a {
         img {
-            height: 2rem;
-            width: 2rem;
+            height: 1.6rem;
+            width: 1.6rem;
+            display: inline;
 
             &:hover,
             &:focus {
-                filter: brightness(0);
+                fill: white;
             }
         }
     }
