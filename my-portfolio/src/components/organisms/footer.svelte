@@ -53,7 +53,6 @@
         h6 {
             font-size: 1.2rem;
             letter-spacing: 2px;
-            font-weight: 400;
         }
 
         .footer-content-wrapper {
