@@ -6,7 +6,7 @@
     <div class='title'>
         <h1>Selected Work</h1>
     </div>
-    <ul>
+    <ul class='work-wrapper'>
         <li>
             <a href="/work/one">
                 <Work 
@@ -37,6 +37,7 @@
     </ul>
     <div class='checkout'>
         <a href="/work">VIEW ALL PROJECTS</a>
+        <img src="/arrow-icon.svg" alt="Arrow">
     </div>
 </section>
 
@@ -59,24 +60,34 @@
     
         .checkout {
             padding-top: 16px;
+            display: flex;
+            align-items: center;
+
+            a {
+                padding-right: 16px;
+            }
+
+            img {
+                width: 1.2rem;
+            }
         }
     }
 
     .title {
-        text-align: right;
-
+        //text-align: right;
+        h1 {
+            letter-spacing: 0.5rem;
+            font-size: clamp(24px, 7vw + 1rem, 72px);
+            white-space: nowrap;
+            font-family: 'BebasNeue-Regular';
+        }
     }
 
-    h1 {
-        /* color: $black-900; */
-        font-size: clamp(24px, 7vw + 1rem, 72px);
-        white-space: nowrap;
-        font-family: 'BebasNeue-Regular';
-        //padding-right: 16px;
-    }
 
-    ul {
-        list-style: none;
+    .work-wrapper {
+        li {
+            list-style-type: none;
+        }
     }
 
     a {

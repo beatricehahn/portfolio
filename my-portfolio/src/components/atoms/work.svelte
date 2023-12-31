@@ -22,8 +22,15 @@
         background-color: rgb(61, 61, 61);
         border-radius: 6px;
 
+        @media screen and (max-width: 600px) {
+            width: calc(100vw - 2 * $main-padding);
+            height: calc((100vw - 2 * $main-padding)/1.4);
+        }
+
         width: calc(100vw - 2 * $main-padding);
-        height: calc((100vw - 2 * $main-padding)/2);
+        max-width: 616px;
+        height: calc((100vw - $main-padding)/1.4);
+        max-height: 416px;
 
         margin-top: $container-padding;
         margin-bottom: $container-padding;
