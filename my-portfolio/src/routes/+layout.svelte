@@ -3,7 +3,7 @@
     import Footer from '../components/organisms/footer.svelte';
 </script>
 
-<!-- <Header /> -->
+<Header />
 <main>
     <slot></slot>
 </main>

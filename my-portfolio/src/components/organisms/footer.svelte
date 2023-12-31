@@ -3,25 +3,43 @@
 </script>
 
 <footer>
-    <ul id='social-icons'>
-        <li>
-            <GraphicLink src="/github.svg" url="https://github.com/beatricehahn" alt="Github Profile" />
-        </li>
-        <li>
-            <GraphicLink src="/linkedin.svg" url="linkedin.com/in/beatrice-hahn" alt='LinkedIn Profile' />
-        </li>
-    </ul>
-    <p id='email-address'>hahnb@alumni.usc.edu</p>
-    <p>California, USA</p>
-    <ul id='footer-menu'>
-        <li><a href="#about-section">ABOUT</a></li>
-        <li><a href="#work-section">WORK</a></li>
-        <li><a href="#about-section">RESUME</a></li>
-        <li><a href="#contact-section">CONTACT</a></li>
-    </ul>
-    <span>Beatrice Hahn 2024</span>
+    <div class='footer-content-wrapper'>
+        <div id='contact-info'>
+            <h6>Contact Details</h6>
+            <div>
+                <img src="/email-icon.svg" alt="Email icon">
+                <p id='email-address'>hahnb@alumni.usc.edu</p>
+            </div>
+        </div>
+    
+        <ul id='social-icons'>
+            <h6>Digital Spaces</h6>
+            <li>
+                <GraphicLink src="/github-icon.svg" url="https://github.com/beatricehahn" alt="Github Profile" />
+                <a href="https://github.com/beatricehahn" target="_"><span>Github</span></a>
+            </li>
+            <li>
+                <GraphicLink src="/linkedin-icon.svg" url="https://www.linkedin.com/in/beatrice-hahn/" alt='LinkedIn Profile' />
+                <a href="https://www.linkedin.com/in/beatrice-hahn/" target='_'><span>LinkedIn</span></a>
+            </li>
+            <li>
+                <GraphicLink src="/itch-icon.svg" url="https://bardicblaze.itch.io/" alt='Itch.io Profile' />
+                <a href="https://bardicblaze.itch.io/" target='_'><span>Itch.io</span></a>
+            </li>
+        </ul>
+    
+        <ul id='footer-menu'>
+            <h6>Menu</h6>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#about-section">Resume</a></li>
+            <li><a href="#work-section">Work</a></li>
+        </ul>
+    </div>
+
+
+    <span class='copyright-and-other'>2023-2024 &copy; <b>Beatrice Hahn</b></span>
     <br/>
-    <span>Dev & UI/UX Design &#x2022 Game Design</span>
+    <span class='copyright-and-other'>Dev & UI/UX Design &#x2022 Game Design</span>
 </footer>
 
 <style lang="scss" scoped>
@@ -32,9 +50,37 @@
         padding: $main-padding;
         color: $off-white;
 
-        #email-address {
-            margin-top: 8px;
-            margin-bottom: 8px;
+        h6 {
+            font-size: 1.5rem;
+        }
+
+        .footer-content-wrapper {
+            display: flex;
+            justify-content: space-around;
+
+            @media  (max-width: 600px) {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+        
+        #contact-info {
+            margin-top: 32px;
+            margin-bottom: 32px;
+
+            div {
+                margin-top: 8px;
+
+                img {
+                    margin-left: 4px;
+                }
+            }
+
+            #email-address {
+                padding-left: 16px;
+                display: inline;
+            }
         }
 
         #footer-menu {
@@ -42,19 +88,44 @@
             margin-top: 32px;
             margin-bottom: 32px;
 
+            li {
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+
             li > a {
                 color: $off-white;
                 text-decoration: none;
             }
         }
 
-        #social-icons li {
-            display: inline;
-        } 
+        #social-icons {
+            list-style-type: none;
+            margin-top: 32px;
+            margin-bottom: 32px;
 
-        span {
+            li {
+                padding-bottom: 8px;
+                padding-top: 8px;
+
+                display: flex;
+                align-items: center;
+                
+                a {
+                    text-decoration: none;
+                    color: $off-white;
+                    margin-bottom: 4px;
+                }
+
+                span {
+                    padding-left: 16px;
+                }
+            }
+        }
+
+        .copyright-and-other {
             color: $ui-text-grey;
-            font-size: 10px;
+            font-size: 12px;
         }
     }
 </style>
