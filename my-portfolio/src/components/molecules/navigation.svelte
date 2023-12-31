@@ -3,7 +3,9 @@
 </script>
 
 <nav>
-    <img src="/bh-v2.svg" alt="homepage logo">
+    <a href='/'>
+        <img src="/bh-logo-v4.svg" alt="homepage logo">
+    </a>
     <DropdownMenu />
 </nav>
 
@@ -18,7 +20,7 @@
         height: 100px;
 
         img {
-            height: 48px;
+            height: 2rem;
         }
     }
 
